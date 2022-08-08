@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(248, 249, 250);
+    overflow-x: hidden;
+}
+
+input,
+textarea,
+select {
+    text-decoration: none !important;
+    outline: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.btn,
+.btn-close {
+    text-decoration: none !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #ffc107 !important;
+    text-decoration: none !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+.interaction:focus {
+    border-color: #fff3cd !important;
+}
+
+.form-check-input:checked {
+    background-color: #ffc107 !important;
+    border-radius: 0 !important;
+    border-color: #ffc107 !important;
+}
