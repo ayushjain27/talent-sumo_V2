@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 
 import Quesans from '../Modal/QuesAns';
 
-// import Track from '../Modal/Track';
 
 const Create = () => {
 
@@ -14,6 +13,7 @@ const Create = () => {
     const [custom, setCustom] = useState(false);
     const [disabled, setDisabled] = useState(false);
     const [certificate, setCertificate] = useState(false);
+    const [text, setText] = useState("");
 
     const handleCustom = () => {
         setCustom(!custom);
@@ -28,6 +28,10 @@ const Create = () => {
     const handleClick = (e) => {
         e.preventDefault();
         navigate('/access');
+    }
+
+    const handleOnChange = (event) => {
+        setText(event.target.value)
     }
 
     return (
@@ -50,14 +54,14 @@ const Create = () => {
                                 <div className="row">
                                     <div className="col-md-4">
                                         <div className="mb-3">
-                                            <label htmlFor="detail" className="form-label fw-bold">Company/Institute Name</label>
-                                            <input type="text" className="form-control" placeholder='Enter company/institute name' id="companyName" />
+                                            <label htmlFor="detail" className="form-label fw-bold">Company/Institute Name*</label>
+                                            <input onChange={handleOnChange} type="text" className="form-control" placeholder='Enter company/institute name' id="companyName" />
                                         </div>
                                     </div>
                                     <div className="col-md-4">
                                         <div className="mb-3">
-                                            <label htmlFor="job" className="form-label fw-bold">Job Title / Course Title</label>
-                                            <input type="text" className="form-control" placeholder='Enter Job role' id="job" />
+                                            <label htmlFor="job" className="form-label fw-bold">Job Title / Course Title*</label>
+                                            <input onChange={handleOnChange} type="text" className="form-control" placeholder='Enter Job role' id="job" />
                                         </div>
                                     </div>
                                     <div className="col-md-4">
@@ -159,7 +163,7 @@ const Create = () => {
                             </form>
                             <hr />
                             <div className="d-grid col-3 ms-auto">
-                                <button onClick={handleClick} type="submit" className="btn btn-dark button">Save and Continue</button>
+                                <button disabled={text.length === 0} onClick={handleClick} type="submit" className="btn btn-dark button">Save and Continue</button>
                             </div>
                         </div>
                     </div>

@@ -1,17 +1,28 @@
 import React from 'react';
 import styles from './Profile.module.css';
 
-import { cities } from "../../assets/Cities/cities";
+import { countries } from '../../assets/Countries/countries';
 
 const Profile = () => {
     return (
         <>
+            <style>
+                {`
+                    .button {
+                        border-radius: 0;
+                    }
+                `}
+            </style>
             <div className='mt-5 container'>
                 <div className="row">
                     <div className="col-md-5 mx-auto">
                         <div className={`${styles.card} card`}>
                             <div className="card-body">
-
+                                <div className="mb-3">
+                                    <label htmlFor="formFile" className="form-label">Upload Profile Picture</label>
+                                    <input className="form-control" type="file" id="formFile" />
+                                </div>
+                                <button className='btn btn-warning button'>Upload</button>
                             </div>
                         </div>
                     </div>
@@ -52,10 +63,10 @@ const Profile = () => {
                                     <div className="col-md-6">
                                         <div className="mb-3">
                                             <select class="form-select" aria-label="Default select example">
-                                                <option>Select Location</option>
+                                                <option selected>Select Country</option>
                                                 {
-                                                    cities.map((item) => (
-                                                        <option>{item.name + "," + item.state}</option>
+                                                    countries.map((item) => (
+                                                        <option>{item.name}</option>
                                                     ))
                                                 }
                                             </select>
