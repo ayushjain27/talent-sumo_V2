@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import styles from './ThankYou.module.css';
 
-import ty from '../../assets/thankyou.png';
+import ty from '../../assets/Images/thankyou.png';
 
 const ThankYou = () => {
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './ForgetPassword.module.css';
 
-import password from '../../assets/password.png';
+import password from '../../assets/Images/password.png';
 
 const ForgetPassword = () => {
     return (

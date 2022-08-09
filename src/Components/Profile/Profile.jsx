@@ -99,6 +99,8 @@ const Profile = () => {
                                             </div>
                                         </div>
                                     </div>
+
+                                    <button className='btn btn-dark'>Submit Details</button>
                                 </div>
                             </div>
                         </div>

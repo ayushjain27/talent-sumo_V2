@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { IoIosLock } from 'react-icons/io';
 
-import welcome from '../../assets/signup.png';
+import welcome from '../../assets/Images/signup.png';
 
 const SignUp = () => {
 

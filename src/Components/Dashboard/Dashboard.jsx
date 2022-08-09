@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Dashboard.module.css';
-import dashboard from '../../assets/dashboard.png';
-import img1 from '../../assets/img-1.png';
-import img2 from '../../assets/img-2.png';
-import img3 from '../../assets/img-3.png';
+import dashboard from '../../assets/Images/dashboard.png';
+import img1 from '../../assets/Images/img-1.png';
+import img2 from '../../assets/Images/img-2.png';
+import img3 from '../../assets/Images/img-3.png';
 
 import { useNavigate } from 'react-router-dom';
 
@@ -35,7 +35,6 @@ const Dashboard = () => {
                                         <img className={`${styles.img} img-fluid`} src={dashboard} width={250} alt="dashboard" />
                                     </div>
                                 </div>
-                                <button onClick={() => navigate("/profile")} className='btn btn-dark'>View Profile</button>
                             </div>
                         </div>
                     </div>
