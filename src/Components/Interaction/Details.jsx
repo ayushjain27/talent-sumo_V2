@@ -29,7 +29,7 @@ const Details = () => {
   }
 
   const handleClone = () => {
-    window.location = "/clone";
+    window.location = "/create";
   }
 
   return (
@@ -333,7 +333,8 @@ const Details = () => {
                               </div>
                               <div className="form-check mb-3">
                                 <input className="form-check-input" type="checkbox" defaultChecked id="form" />
-                                <label className="form-check-label" htmlFor="form">                                      <FaWpforms className='me-1' />Form
+                                <label className="form-check-label" htmlFor="form">
+                                  <FaWpforms className='me-1' />Form
                                 </label>
                               </div>
                             </div>

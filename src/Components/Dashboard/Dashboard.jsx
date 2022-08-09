@@ -35,6 +35,7 @@ const Dashboard = () => {
                                         <img className={`${styles.img} img-fluid`} src={dashboard} width={250} alt="dashboard" />
                                     </div>
                                 </div>
+                                <button onClick={() => navigate("/profile")} className='btn btn-dark'>View Profile</button>
                             </div>
                         </div>
                     </div>
@@ -81,7 +82,7 @@ const Dashboard = () => {
                     <button onClick={() => navigate('/create')} className='btn btn-warning'>Create Interaction</button>
                     <button onClick={() => navigate('/interaction')} className='btn btn-warning'>View Interaction</button>
                     <button onClick={() => navigate('/viewReport')} className='btn btn-warning'>View Candidate Reports</button>
-                    <button onClick={() => navigate('/teams')} className='btn btn-warning'>Invite Team Member</button>
+                    <button onClick={() => navigate('/teams')} className='btn btn-warning'>Teams</button>
                 </div>
 
             </div>

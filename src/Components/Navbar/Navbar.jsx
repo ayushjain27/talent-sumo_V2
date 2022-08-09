@@ -54,6 +54,13 @@ const Navbar = () => {
                             <button onClick={() => navigate('/interaction')} className={`${styles.search}`}>
                                 <FaSearch className='fs-4' />
                             </button>
+                            <Link onClick={handleClick} className="mt-1" to="/profile">
+                                <img
+                                    src="https://via.placeholder.com/32"
+                                    alt="avatar"
+                                    className={styles.avatar}
+                                />
+                            </Link>
                             <button onClick={() => navigate('/login')} className={`${styles.login} btn btn-outline-warning`}>Login</button>
                             <button onClick={() => navigate('/register')} className="btn btn-warning">Sign Up</button>
                         </div>

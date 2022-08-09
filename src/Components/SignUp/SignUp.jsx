@@ -48,7 +48,10 @@ const SignUp = () => {
                                     <div className="mb-3">
                                         <input type="password" className='form-control' id="confirmPassword" placeholder="Confirm Password" />
                                     </div>
-                                    <div className="mb-5 d-grid col-4 mx-auto">
+                                    <div className="mb-3">
+                                        <input type="number" className='form-control' id="inviteCode" placeholder="Invitation Code" />
+                                    </div>
+                                    <div className="mb-3 d-grid col-4 mx-auto">
                                         <button type="button" className="btn btn-warning"><IoIosLock className='fs-4 me-1' />Create Account</button>
                                     </div>
                                     <p className={`${styles.new} text-center`}>Already have an account ? <span onClick={() => navigate('/login')} className='ms-1 text-warning fw-bold text-decoration-underline' style={{ cursor: 'pointer' }}>Login here</span></p>

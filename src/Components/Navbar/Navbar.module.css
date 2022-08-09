@@ -31,6 +31,13 @@
     background-color: inherit;
 }
 
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .search:focus,
 .search:hover,
 .search:active {

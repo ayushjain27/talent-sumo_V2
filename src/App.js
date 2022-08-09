@@ -18,8 +18,8 @@ import Alert from './Components/Alert/Alert';
 import ViewReports from './Components/ViewReports/ViewReports';
 import Certificate from './Components/Certificate/Certificate';
 import ThankYou from './Components/ThankYou/ThankYou';
-import Clone from './Components/Clone/Clone';
 import Team from './Components/Team/Team';
+import Profile from './Components/Profile/Profile';
 
 function App() {
 
@@ -44,7 +44,7 @@ function App() {
           <Route exact path='/notification&message' element={<Notification showAlert={showAlert} />} />
           <Route exact path='/thankyou' element={<ThankYou />} />
           <Route exact path='/interaction' element={<Interaction />} />
-          <Route exact path='/clone' element={<Clone />} />
+          <Route exact path='/profile' element={<Profile />} />
           <Route exact path='/teams' element={<Team />} />
           <Route exact path="/report" element={<Report />} />
           <Route exact path="/leaderboardReport" element={<LeaderboardReport />} />
