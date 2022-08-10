@@ -47,6 +47,7 @@ const mouseLeave = () => {
                   className="h-50 w-50 m-auto border p-3 bg-secondary"
                 />
                 <FaPenSquare
+                  onMouseEnter={mouseEnter}
                   style={style}
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
