@@ -18,11 +18,11 @@ const Profile = () => {
                     <div className="col-md-5 mx-auto">
                         <div className={`${styles.card} card`}>
                             <div className="card-body">
-                                <div className="mb-3">
+                                {/* <div className="mb-3">
                                     <label htmlFor="formFile" className="form-label">Upload Profile Picture</label>
                                     <input className="form-control" type="file" id="formFile" />
-                                </div>
-                                <button className='btn btn-warning button'>Upload</button>
+                                </div> */}
+                                <button data-bs-toggle="modal" data-bs-target="#exampleModal" className='btn btn-warning button'>Upload</button>
                             </div>
                         </div>
                     </div>
